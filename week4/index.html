@@ -8,17 +8,37 @@
 </head>
 <body>
     <!-- This is an HTML comment -->
+    <!--
+        shift will indent - shift + tab will indent backwards.
+        cmd/ctrl + left/right arrows move to start and end of the line.
+        cmd/ctrl + up/down arrows move to start or end of page.
+        shift + cmd/ctrl + left/right/up/down arrows select to the start/end of a line.
+        shift + up/down arrows select per line.
+    -->
     <!-- Site Header -->
     </header>   
         <!-- h1 is the most important heading. We can use 6 levels of headings from h1 to h6 -->
     <header>
         <h1>Reggie's Coffee Shop</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+
     <header>
     <!-- starting main content of the page -->
     <main>
+        <!-- Adding an on page link -->
+        <a href="#treatofweek">Treat of the Week</a>
         <!-- article of the page. this can be used as a stand-alone -->
         <article>
             <h2>Our Story</h2>
+            <!-- ADding an image -->
+            <img src="./images/coffee-shop.jpg" title="coffee cup on a pile of coffee beans" alt="coffee cup on a pile of coffee beans">
             <p>
                 We are a <em> family owned business </em>. Reggie is the <abbr title="Chief Executive Officer">CEO</abbr> and
                 head barista of the shop. Maria is the pastry chef.
@@ -55,7 +75,7 @@
     </ol>
 </section>
 <!-- Adding section for description list -->
-<section>
+<section id="treatofweek">
     <h3>Treat of the Week</h3>
     <dl>
         <dt>Name</dt>
@@ -76,8 +96,9 @@
                 <li>Bananas</li>
             </ul>
         </dd>
-
     </dl>
+    <!-- Adding an external link -->
+    <a href="https://natashaskitchen.com/banana-bread-recipe-video/" target="_blank">Get the Recipe</a>
 </section>
 </main>
 <!-- Site Footer -->
