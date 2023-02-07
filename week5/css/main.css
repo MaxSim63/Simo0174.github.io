@@ -1,0 +1,160 @@
+/* 
+    This is a css comment 
+    Shortcut for adding comments is ctrl/cmd + /
+*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+}
+
+h1 {
+    color: cadetblue;
+}
+
+p {
+    background-color: antiquewhite;
+}
+/* Selecting multiple elements */
+h1, h2, h3, h4 {
+    text-decoration: underline;
+}
+/* selecting child elements */
+nav ul {
+    list-style: none;
+}
+/* selecting child element with multiple levels2 */
+nav ul a {
+    color: darkslategray;
+    text-decoration: none;
+}
+
+/* Selecting element with ID Value */
+#treatofweek {
+    background-color: cadetblue;
+}
+
+.blue-link {
+    background-color: darkslategray;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.large-text {
+    font-size: 20px;
+}
+
+.white-text {
+    color: antiquewhite;
+}
+
+/* 
+    Combinators
+    direct child selector - will only select child of the parent
+*/
+
+article>p {
+    font-size: 24px;
+}
+
+/* Adjacent sibling selector - Selects the element that is the very next sibling to the selected element*/
+
+h3+ul {
+    border: 1px solid black;
+}
+
+h3~p {
+    text-transform: uppercase;
+}
+
+/* Attribute Selectors */
+[href="#treatofweek"] {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* [src="./images/coffee-shop.jpg"] {
+    border: 4px solid darkslategray;
+} */
+
+[src$=".jpg"] {
+    border: 4px solid darkslategray;
+}
+
+/* Psuedo classes */
+/* Styling navigation */
+nav ul a, 
+nav ul a:link
+nav ul a:visited {
+    background-color: antiquewhite;
+    /* horizontal vertical blur spread color */
+    box-shadow: -2px 2px 4px 2px black;
+}
+
+nav ul .current, 
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: underline;
+}
+
+nav ul a:active {
+    box-shadow: 0 0 4px 2px black;
+}
+
+/* Positiopn Selectors */
+/* first-child and last-child */
+aside ul li:first-child {
+    font-weight: bold;
+}
+
+section ol li:last-child {
+    font-weight: bold;
+}
+
+/* Styling Table */
+table{
+    border-collapse: collapse;
+}
+
+/* nth-child selector - even/odd */
+/* hex color value with 6 characters */
+tbody tr:nth-child(even) {
+    background-color: #d5836c;
+}
+
+/* Using nth-child with n */
+/* where n is 0,1,2,3... until number elements */
+table th:nth-child(n),
+table td:nth-child(n) {
+    border: 1px solid black;
+}
+
+/* using a formula in nth-child selector */
+table td:nth-child(2n+1) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* 
+    css specificity 
+    Formula: IN-line Style, ID, Class, Tag-name (1,0,0,0)
+*/
+
+/* (0,0,0,1) */
+footer {
+    background-color: aqua;
+}
+/* (0,0,0,2) */
+body footer {
+    background-color: orange;
+}
+/* (0,0,1,0) */
+.site-footer {
+    background-color: antiquewhite;
+}
+/* (0,0,0,2) */
+article h2 {
+    text-transform: uppercase;
+}
+
+footer.site-footer {
+    background-color: #d5836c;
+}
