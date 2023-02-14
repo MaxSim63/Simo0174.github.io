@@ -5,6 +5,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: darkslategray;
+    /* Adding background image */
+    background-image: url(../images/white_brick_wall.png);
 }
 
 h1 {
@@ -26,11 +28,32 @@ nav ul {
 nav ul a {
     color: darkslategray;
     text-decoration: none;
+    font-size: 1.5rem;
+    /* 1.5rem = 1.5 x 16px = 24px */
 }
 
 /* Selecting element with ID Value */
 #treatofweek {
-    background-color: cadetblue;
+    /* color image repeat position-x position-y */
+    background: cadetblue url(../images/bread.jpg) 
+    no-repeat center;
+
+    /* background-size */
+    background-size: cover;
+
+    font-size: 1.25rem;
+    /* 1.25 x 16px = 20px */
+    padding: 1em;
+    /* 1 x 20px = 20px */
+
+    /* viewport based unit */
+    /* width: 100vw; */
+    /* Scroll wheel bc it has space coming from the 
+    parent, it goes out og the screen which is not 
+    ideal */
+
+    /* height: 100vw; */
+    /* height is 100% of the browser size and its dynamic */
 }
 
 .blue-link {
@@ -52,8 +75,13 @@ nav ul a {
     direct child selector - will only select child of the parent
 */
 
+/* CSS typography properties */
 article>p {
     font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 /* Adjacent sibling selector - Selects the element that is the very next sibling to the selected element*/
