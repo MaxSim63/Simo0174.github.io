@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reggie's Coffee Shop - Home</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- This is an HTML comment -->
+    <!--
+        shift will indent - shift + tab will indent backwards.
+        cmd/ctrl + left/right arrows move to start and end of the line.
+        cmd/ctrl + up/down arrows move to start or end of page.
+        shift + cmd/ctrl + left/right/up/down arrows select to the start/end of a line.
+        shift + up/down arrows select per line.
+    -->
+    <!-- Site Header -->
+</header>   
+<!-- h1 is the most important heading. We can use 6 levels of headings from h1 to h6 -->
+<header>
+    <h1>Reggie's Coffee Shop</h1>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+
+    <header>
+    <!-- starting main content of the page -->
+    <main>    
+        <h2>Contact Us</h2>
+        <!-- Adding table for hours of operation-->
+        <table>
+            <caption>Hours of Operation</caption>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>Mon - Fri</td>
+                    <td>6AM - 9PM</td>
+                </tr>
+                <tr>
+                    <td>Sat</td>
+                    <td>8AM - 11PM</td>
+                </tr>
+                <tr>
+                    <td>Sun</td>
+                    <td>Closed</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Adding section for contact form-->
+        <section>
+            <h3>We would love to hear from you</h3>
+            <!-- Adding a form --> 
+            <form action="thanks.html" method="get">
+                <div>
+                    <label for="fullname">Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="John Doe">
+                </div>
+
+                <div>
+                    <label for="youremail">Email</label>
+                    <input type="email" name="youremail" id="youremail" placeholder="Algonquin Email" value="@algonquinlive.com">
+                </div>
+
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+
+                <div>
+                    <label for="tickets">How many tickets? (sold in pairs)</label>
+                    <input type="number" name="tickets" id="tickets" min="2" max="10" step="2" value="2">
+                </div>
+
+                <div>
+                    <label for="row">Row</label>
+                    <select name="row" id="row">
+                        <option value="front">Front</option>
+                        <option value="center" selected>Center Row</option>
+                        <option value="back">Back Row</option>
+                    </select>
+                </div>
+
+                <div>
+                    <h3>Have you been here before?</h3>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="past" checked>
+
+                    <label for="no">No</label>
+                    <input type="radio" name="past" id="no">
+                </div>
+
+                <div>
+                    <h3>Policies</h3>
+                    <input type="checkbox" name="policies" id="policies">
+                    <label for="policies">I agree to the terms and conditions.</label>
+                </div>
+
+                <button type="submit">Submit</button>
+
+            </form>
+        </section>
+    </main>
+<!-- Site Footer -->
+<footer>
+    Copyright &copy; Reggie's Coffee Shop, 2023
+</footer>
+</body>
+</html>
