@@ -1,17 +1,62 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
 }
 
-header {
-    background-color: blueviolet;
-}
-
-footer {
-    background-color: blueviolet;
-}
-
 h1 {
+    background-color: blueviolet;
+}
+
+.site-footer {
+    background-color: blueviolet;
+}
+
+.site-title {
     color: antiquewhite;
 }
 
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
+article ol li:nth-child(odd) {
+    background-color: lightskyblue;
+}
+
+ol {
+    list-style-type: square;
+}
+
+ol {
+    list-style-position: inside;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul .current,
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: none;
+}
+
+nav ul .underline,
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: none;
+}
+
+nav ul a:hover,
+nav ul a:focus {
+    background-color: antiquewhite;
+}
+
+nav ul a,
+nav ul a:link
+nav ul a:visited {
+    background-color: lightskyblue;
+    box-shadow: -2px 2px 4px 2px black;
+}
