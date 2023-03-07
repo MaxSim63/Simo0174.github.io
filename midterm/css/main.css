@@ -16,14 +16,14 @@ body {
 h1 {
     color: white;
     font-weight: 400;
-    font-size: 48pt;
+    font-size: 30pt;
     margin: 0;
     text-transform: capitalize;
     text-align: center;
-    padding-bottom: 7.5%;
-    padding-top: 15%;
     position: absolute;
     /* Should have added the position from the start, forgot */
+    top: 50%;
+    width: 100%;
 }
 
 .background {
