@@ -1,0 +1,533 @@
+/* *******************************************
+                CUSTOM STYLES
+**********************************************/
+
+/* Global Styles */
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+}
+
+*,
+*:after
+*:before {
+    box-sizing: inherit;
+    line-height: inherit;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+img {
+    width: 100%;
+}
+
+/* LoVe HAte - Link, Visited, Hover/Focus, Active*/
+a,
+a:link,
+a:visited {
+    color: inherit;
+}
+
+a:hover,
+a:focus {
+    color: #00add8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    margin: 1em 0 0.5em;
+}
+
+h1 {
+    font-size: 5.063rem;
+}
+
+h2 {
+    font-size: 3.375rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+/* top-bottom left-right */
+p {
+    margin: 1em 0;
+}
+
+.contianer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+
+}
+
+/* Header */
+.mobile-logo {
+    max-width: 150px;
+}
+
+.desktop-logo {
+    display: none;
+}
+
+.banner {
+    height: 600px;
+    background: grey url(../images/smog-mobile.jpg);
+    background-size: cover;
+}
+
+.banner h1 {
+    margin: 0;
+    padding-top: 250px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Mobile App Section */
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 6px;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #00add8;
+    color: inherit;
+}
+
+/* Footer Styles */
+.site-footer {
+    margin-top: 20px;
+    padding: 20px 0;
+    border-top: 2px solid #00add8;
+}
+
+.copy {
+    text-align: right;
+}
+
+
+/*********************************************
+                Desktop Styles
+**********************************************/
+@media screen and (min-width:600px) {
+    html {
+        font-size: 16px;
+    }
+
+    .mobile-logo {
+        display: none;
+    }
+
+    .desktop-logo {
+        display: inline-block;
+        max-width: 300px;
+    }
+    
+    .banner {
+        background-image: url(../images/smog-desktop.jpg);
+    }
+
+    .banner h1 {
+        color: white;
+    }
+
+    /* Mobile App Section */
+    .app img {
+        width: 40%;
+        float: left;
+        margin-right: 1em;
+    }
+    .app .btn {
+        float: right;
+    }
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/************************************************ 
+                CUSTOM STYLES                   
+************************************************/
+
+/* Global Styles */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+
+}
+
+body {
+    line-height: 1.5;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+    line-height: inherit;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+img {
+    width: 100%;
+}
+
+/* LoVe HAte - Link, Visited, Hover/Focus, Active */
+a,
+a:link,
+a:visited {
+    color: inherit;
+}
+
+a:hover,
+a:focus {
+    color: #00add8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    margin: 1em 0 0.5em;
+}
+
+h1 {
+    font-size: 5.063rem;
+}
+
+h2 {
+    font-size: 3.375rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+/* top-bottom left-right */
+
+p {
+    margin: 1em 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/* header */
+.mobile-logo {
+    max-width: 150px;
+}
+
+.desktop-logo {
+    display: none;
+}
+
+.banner {
+    height: 600px;
+    background: grey url(../images/smog-mobile.jpg);
+    background-size: cover;
+}
+
+.banner h1 {
+    margin: 0;
+    padding-top: 250px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Navigation */
+.nav-list {
+    display: flex;
+}
+
+.nav-list li {
+    flex: 1;
+    border: none;
+    border-right: 1px solid gray;
+}
+
+.nav-list li:last-child {
+    border: none;
+}
+
+/* LOvE HAte*/
+.nav-list a,
+.nav-list a:link,
+.nav-list a:visited {
+    display: block;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.current {
+    background-color: #00add8;
+    color: inherit;
+}
+
+/* Action Section */
+.actions-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.actions-list li {
+    max-width: 50%;
+    padding: 1em;
+    font-size: 1.5rem;
+}
+
+/* MOBILE APP SECTION */
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 6px;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #00add8;
+    color: inherit;
+}
+
+/* footer style */
+.site-footer {
+    margin-top: 20px;
+    padding: 20px 0;
+    border-top: 2px solid #00add8;
+}
+
+.copy {
+    text-align: right;
+}
+
+/************************************************ 
+                Desktop Styles               
+************************************************/
+@media screen and (min-width:600px) {
+
+    html {
+        font-size: 16px;
+    }
+
+    .mobile-logo {
+        display: none;
+    }
+
+    .desktop-logo {
+        display: inline-block;
+        max-width: 300px;
+    }
+
+    .banner {
+        background-image: url(../images/smog-desktop.jpg);
+    }
+
+    .banner h1 {
+        color: white;
+    }
+
+    /* Mobile App Section */
+    .app img {
+        width: 40%;
+        float: left;
+        margin-right: 1em;
+    }
+
+    .app .btn {
+        float: right;
+    }
+
+}
+
+/************************************************ 
+                Media Query 800px               
+************************************************/
+
+
+
+@media screen and (min-width: 800px){
+.actions-list li{
+max-width: 20%;
+}
+}
