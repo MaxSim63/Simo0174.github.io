@@ -1,0 +1,563 @@
+/* Changes body background color and font */
+body {
+    background-color: #fff;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Changes Header background color */
+header {
+    background-color: #222222;
+}
+
+/* Adding color and size to navigation */
+nav ul li a,
+nav ul li a:link,
+nav ul li a:visited {
+    background-color: #222222;
+    color: #c78c06;
+    text-decoration: none;
+    width: 100%;
+    height: 50px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+/* Navigation hover */
+nav ul li a:hover {
+    background-color: #c78c06;
+    color: #222222;
+}
+
+/* Nav size adjustment */
+nav {
+    width: 100%;
+    margin: 0 0px 10px 0px;
+}
+
+/* Adjustment/style for nav list */
+nav ul li {
+    height: 50px;
+    text-align: center;
+    width: 100%;
+    display: grid;
+    align-items: center;
+}
+
+nav ul {
+    display: grid;
+    justify-items: center;
+}
+
+/* font awesome color selection*/
+.fa-solid {
+    color: #c78c06;
+}
+
+/* Adjusts the banner image to fit */
+.main-banner {
+    background-image: url("../images/main-banner.jpg");
+    background-position: 55% 68%;
+    background-size: cover;
+    margin: 0;
+    min-height: 400px;
+    width: 100%;
+}
+
+/* Background color and size for logo container */
+#logo-holder {
+    width: 100%;
+    background-color: #c78c06;
+}
+
+/* Styles Search box sizing */
+#search-form {
+    display: grid;
+    grid-template-columns: auto 40px;
+    height: 50px;
+}
+
+/* Our vision image style */
+.image-container {
+    background-image: url("../images/vision.jpg");
+    background-position: 55% 68%;
+    background-size: cover;
+    margin: 0;
+    min-height: 400px;
+    width: 100%;
+}
+
+/* Styles search box aesthetically */
+#search-form input[type=text] {
+    color: #222222;
+    font-size: 20px;
+}
+
+/* Styles the search button */
+#search-form button {
+    font-size: 20px;
+    border: 1px solid #c78c06;
+    background-color: #222222;
+    cursor: pointer;
+}
+
+/* Centers images */
+.center {
+    display: block;
+    margin-right: auto;
+    width: 100%;
+    margin-left: auto;
+}
+
+/* Main banner and out vision position */
+.main-banner,
+.our-vision {
+    position: relative;
+}
+
+/* Styles banner overlay */
+.main-banner-overlay {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    margin: 20px 0 0px 0px;
+    padding: 15px;
+}
+
+/* Style banner overlay button */
+.main-banner-overlay button {
+    background-color: #c78c06;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.main-banner-overlay h1 {
+    font-size: 56px;
+    margin: 0px 0px 15px 0;
+}
+
+.main-banner-overlay p {
+    margin: 0px 0px 15px 0;
+}
+
+/* Styles main container */
+.main-grid-container {
+    display: grid;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styles button in our vision */
+.our-vision button {
+    border: 1px solid #c78c06;
+}
+
+.our-vision button i {
+    color: #fff;
+}
+
+.main-banner-overlay button i {
+    color: #000;
+}
+
+.about-us {
+    background-color: #FFE6AC;
+    padding: 15px;
+}
+
+/* Styles subheadings */
+.about-us-Column2 h1,
+.our-services-row1 h1,
+.our-team-row1 h1,
+.our-vision-container h1,
+.contact-us-row1 h1 {
+    font-weight: bold;
+    font-size: 45px;
+    margin: 15px 0 15px 0;
+}
+
+/* Styles paragraph in column 2 of about us */
+.about-us-Column2 p {
+    margin: 10px 0 10px 0;
+}
+
+/* Styles containers*/
+.our-services-container,
+.our-team-container {
+    display: grid;
+}
+
+.our-services-row1,
+.our-team-row1 {
+    background-color: #fff;
+}
+
+/* Sryles grid */
+.our-services-row1,
+.our-services-row2,
+.our-services-row3,
+.our-services-row4,
+.our-services-row5,
+.our-services-row6,
+.our_team-row1,
+.our-team-row2,
+.our-team-row3,
+.our-team-row4,
+.our-team-row5 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
+/* Styles gray button */
+.gray-button {
+    background-color: #222222;
+    border: none;
+    padding: 25px;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #222;
+    font-weight: bold;
+}
+
+/* Styles site footer */
+.site-footer {
+    color: #c78c06;
+    background-color: #222222;
+    height: 60px;
+    display: grid;
+    align-items: center;
+    padding: 20px 15px 15px 15px;
+    margin: 0 auto;
+}
+
+/* Subheadings font */
+.sub-headings {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0 0 20px 0;
+}
+
+/* fits and styles raw container */
+.row-content-container {
+    padding: 30px 15px 15px 15px;
+    background-color: #FFE6AC;
+    margin: 0 0 10px 0;
+}
+
+.row-content-container p,
+.our-vision-container p {
+    margin:0 0 15px 0;
+}
+
+/* styles our services, team, contact us */
+.our-services,
+.our-team,
+.contact-us {
+    background-color: #fff;
+    padding: 10px 10px 10px 10px;
+}
+
+.our-team h1 {
+    margin: 0 0 5px 0;
+}
+
+/* Our team font */
+.our-team h3 {
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+.our-team hr {
+    color: #c78c06;
+}
+
+.our-vision {
+    max-height: 300px;
+    display: block;
+    overflow: hidden;
+}
+
+.our-vision-container {
+    position: absolute;
+    top: 0;
+    color: #fff;
+    margin: 20px 0 0px 0px;
+    padding: 15px;
+}
+
+/* table sizing */
+table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+table tr th {
+    border: 1px solid #000;
+    background-color: #FFE6AC;
+    padding: 20px;
+}
+
+table tr td {
+    text-align: left;
+    border: 1px solid #000;
+    padding: 20px;
+}
+
+.contact-us-container form label {
+    width: 100%;
+    display: block;
+    margin: 0 0 10px 0;
+}
+
+.contact-us-container form input[type="text"],
+.contact-us-container form input[type="email"] {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #222;
+    border-radius: 6px;
+}
+
+.contact-us-container form div {
+    margin: 0 0 10px 0;
+}
+
+.contact-us-container form textarea {
+    width: 100%;
+    height: 115px;
+    border: 1px solid #222;
+    border-radius: 6px;
+}
+
+.contact-us-container form button {
+    border: 1px solid #222;
+    color: #c78c06;
+    background-color: #222;
+    padding: 10px;
+}
+
+.contact-us-inner-container {
+    padding: 0px 15px 15px 0px;
+    margin: 0 0 10px 0;
+}
+
+.contact-us-map-container,
+.hours-of-operation {
+    margin: 0 0 10px 0;
+}
+
+.contact-us-map-container iframe {
+    width: 100%;
+}
+
+.main-grid-container .fa-solid {
+    color: #fff;
+    font-size: 19px;
+}
+
+.main-banner img {
+    min-height: 400px;
+}
+
+/* ================================================*/
+/* ------------ MEDIA QUERY + STYLES --------------*/
+/*=================================================*/
+
+@media screen and (min-width:760px) {
+    #logo-holder {
+        background-color: #222;
+        float: left;
+        width: auto;
+    }
+
+    nav ul {
+        display: block;
+        float: left;
+        margin: 40px 0px 0 0;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 10px;
+    }
+
+    /* Styles navigation changes that occur after 760px */
+    nav ul li a,
+    nav ul li a:link,
+    nav ul li a:visited {
+        display: inline;
+        width: auto;
+        padding: 10px;
+    }
+
+    .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 120px;
+        padding: 30px 0 0 0;
+    }
+
+    .max-Width {
+        max-width: 1200px;
+    }
+
+    .main-banner-overlay {
+        max-width: 1200px;
+        min-height: 330px;
+    }
+
+    footer {
+        background-color: #222;
+    }
+
+    #search-form {
+        float: right;
+        display: block;
+        height: auto;
+    }
+
+    .main-banner {
+        justify-content: center;
+        display: flex;
+    }
+
+    /* Styles about us section changes that occur after 760px */
+    .about-us-container {
+        background-color: #FFE6AC;
+        padding: 15px;
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .our-service-level1-img {
+        height: 390px;
+    }
+
+    .our-service-level2-img {
+        height: 253px;
+    }
+
+    .about-us-column2 {
+        padding: 15px;
+    }
+
+    .our-vision {
+        margin: 10px 0 0 0;
+    }
+
+    .our-services {
+        padding: 0;
+        margin: 0 0px 0px 10px;
+    }
+
+    /* Styles our service section changes that occur after 760px */
+    .our-services-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        gap: 10px;
+    }
+
+    .our-services-container .row-content-container {
+        margin: 0;
+    }
+
+    .our-services-row2 {
+        grid-area: 2 / 1 / 3 / 4;
+    }
+
+    .our-services-row3 {
+        grid-area: 2 / 4 / 3 / 7;
+    }
+
+    .our-services-row4 {
+        grid-area: 3 / 1 / 4 / 3;
+    }
+
+    .our-services-row5 {
+        grid-area: 3 / 3 / 4 / 5;
+    }
+
+    .our-services-row6 {
+        grid-area: 3 / 5 / 4 / 7;
+    }
+
+    .our-services-container button {
+        width: 100%;
+    }
+
+    /* Styles our team changes that occur after 760px */
+    .our-team .row-content-container {
+        height: 100%;
+    }
+
+    .our-team {
+        padding: 0;
+        margin: 0 10px 0px 10px;
+    }
+
+    .our-team-container {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .our-team-row1 {
+        order: 1;
+    }
+
+    .our-team-row2 {
+        grid-area: 2 / 1 / 3 / 2;
+        order: 2;
+    }
+
+    .our-team-row3 {
+        grid-area: 2 / 2 / 3 / 3;
+        order: 3;
+    }
+
+    .our-team-row4 {
+        grid-area: 3 / 2 / 4 / 2;
+        order: 5;
+    }
+
+    .our-team-row5 {
+        grid-area: 3 / 1 / 4 / 2;
+        order: 4;
+    }
+
+    /* Styles contact us changes that occur after 760px */
+    .contact-us-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+
+    .contact-us-row1 {
+        order: 1;
+    }
+
+    .contact-us-row2 {
+        order: 2;
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .contact-us-row3 {
+        order: 4;
+        grid-area: 3 / 1 / 4 / 3;
+    }
+
+    .contact-us-row4 {
+        order: 3;
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .main-banner-overlay {
+        margin: 20px 10px 0px 10px;
+    }
+}
